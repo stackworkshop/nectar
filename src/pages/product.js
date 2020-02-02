@@ -10,18 +10,19 @@ import Image from "../components/image"
 const SecondPage = () => (
   <Layout>
     <SEO title="Product Details" />
-    <Flex sx={{ flexDirection: ['column', 'column', 'row'] }}>
+    <Flex sx={{ flexDirection: ['column', 'column', 'row'], mb: 6 }}>
       <Box
-        width={[1, 1, 1 / 3]}
+        width={[1, 1, 3 / 8]}
       >
         <Image />
       </Box>
       <Box
-        width={[1, 1, 2 / 3]}
-        p={3}
+        width={[1, 1, 5 / 8]}
+        px={[0, 0, 4]}
+        py={[4, 4, 0]}
       >
         <h1>Product Details</h1>
-        <p>Welcome to page 2</p>
+        <p>Here be the description of an awesome product.</p>
       </Box>
     </Flex>
 

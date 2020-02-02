@@ -6,7 +6,7 @@ import { Box } from "rebass"
 
 const Header = ({ siteTitle }) => (
   <header
-    sx={{ mb: 3, borderBottom: '1px solid' }}
+    sx={{ mb: 6 }}
   >
     <Box
       mx={'auto'}
@@ -18,7 +18,7 @@ const Header = ({ siteTitle }) => (
         <Link
           to="/"
           sx={{
-            color: 'grey',
+            color: 'primary',
             textDecoration: `none`,
           }}
         >

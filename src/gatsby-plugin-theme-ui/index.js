@@ -1,9 +1,9 @@
 export default {
-  // https://coolors.co/151515-a63d40-e9b872-768b49-729db1
+  // https://coolors.co/151515-a63d40-e9b872-768b49-5e95c0
   colors: {
     text: "#151515",
     background: "#fff",
-    primary: "#729db1",
+    primary: "#5e95c0",
     secondary: "#a63d40",
     grey: "#ddd",
   },
