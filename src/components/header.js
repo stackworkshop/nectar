@@ -6,23 +6,19 @@ import { Box } from "rebass"
 
 const Header = ({ siteTitle }) => (
   <header
-    style={{
-      background: `rebeccapurple`,
-    }}
-    sx={{ mb: 3, }}
+    sx={{ mb: 3, borderBottom: '1px solid' }}
   >
     <Box
-      width={480}
-      m={'0 auto'}
+      mx={'auto'}
       maxWidth={960}
-      px={'1.0875rem'}
-      py={'1.45rem'}
+      py={5}
+      px={4}
     >
-      <h1 style={{ margin: 0 }}>
+      <h1 sx={{ my: 0, mx: 'auto' }}>
         <Link
           to="/"
-          style={{
-            color: `white`,
+          sx={{
+            color: 'grey',
             textDecoration: `none`,
           }}
         >

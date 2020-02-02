@@ -1,9 +1,11 @@
 export default {
+  // https://coolors.co/151515-a63d40-e9b872-768b49-729db1
   colors: {
-    text: "#333",
+    text: "#151515",
     background: "#fff",
-    primary: "#639",
-    secondary: "#ff6347",
+    primary: "#729db1",
+    secondary: "#a63d40",
+    grey: "#ddd",
   },
   fonts: {
     body: "system-ui, sans-serif",
@@ -20,5 +22,5 @@ export default {
     heading: 1.125,
   },
   fontSizes: [12, 14, 16, 20, 24, 32, 48, 64, 72],
-  space: [0, 4, 8, 16, 32, 64, 128, 256, 512],
+  space: [0, 4, 8, 12, 20, 32, 52, 84],
 }
