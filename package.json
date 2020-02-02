@@ -15,6 +15,7 @@
     "gatsby-plugin-sharp": "^2.4.3",
     "gatsby-plugin-theme-ui": "^0.3.0",
     "gatsby-source-filesystem": "^2.1.46",
+    "gatsby-source-graphql": "^2.1.33",
     "gatsby-transformer-sharp": "^2.3.13",
     "prop-types": "^15.7.2",
     "react": "^16.12.0",
@@ -26,16 +27,14 @@
   "devDependencies": {
     "prettier": "^1.19.1"
   },
-  "keywords": [
-    "gatsby"
-  ],
+  "keywords": [ "gatsby" ],
   "license": "MIT",
   "scripts": {
-    "build": "gatsby build",
-    "develop": "gatsby develop",
+    "build": "HASURA_URL=https://nectar-sws.herokuapp.com/v1/graphql node ./node_modules/.bin/gatsby build",
+    "develop": "HASURA_URL=https://nectar-sws.herokuapp.com/v1/graphql node ./node_modules/.bin/gatsby develop",
     "format": "prettier --write \"**/*.{js,jsx,json,md}\"",
     "start": "npm run develop",
-    "serve": "gatsby serve",
+    "serve": "HASURA_URL=https://nectar-sws.herokuapp.com/v1/graphql node ./node_modules/.bin/gatsby serve",
     "clean": "gatsby clean",
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1"
   },

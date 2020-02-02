@@ -1,25 +1,18 @@
 /** @jsx jsx */
-import { jsx } from "theme-ui"
-import { Link } from "gatsby"
-import PropTypes from "prop-types"
-import { Box } from "rebass"
+import { jsx } from 'theme-ui';
+import { Link } from 'gatsby';
+import PropTypes from 'prop-types';
+import { Box } from 'rebass';
 
 const Header = ({ siteTitle }) => (
-  <header
-    sx={{ mb: 6 }}
-  >
-    <Box
-      mx={'auto'}
-      maxWidth={960}
-      py={5}
-      px={4}
-    >
+  <header sx={{ mb: 6 }}>
+    <Box mx={'auto'} maxWidth={960} py={5} px={4}>
       <h1 sx={{ my: 0, mx: 'auto' }}>
         <Link
           to="/"
           sx={{
             color: 'primary',
-            textDecoration: `none`,
+            textDecoration: `none`
           }}
         >
           {siteTitle}
@@ -27,14 +20,14 @@ const Header = ({ siteTitle }) => (
       </h1>
     </Box>
   </header>
-)
+);
 
 Header.propTypes = {
-  siteTitle: PropTypes.string,
-}
+  siteTitle: PropTypes.string
+};
 
 Header.defaultProps = {
-  siteTitle: ``,
-}
+  siteTitle: ``
+};
 
-export default Header
+export default Header;

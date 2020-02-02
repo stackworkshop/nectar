@@ -1,7 +1,7 @@
 /** @jsx jsx */
-import { jsx } from "theme-ui"
-import { useStaticQuery, graphql } from "gatsby"
-import Img from "gatsby-image"
+import { jsx } from 'theme-ui';
+import { useStaticQuery, graphql } from 'gatsby';
+import Img from 'gatsby-image';
 
 /*
  * This component is built using `gatsby-image` to automatically serve optimized
@@ -25,9 +25,9 @@ const Image = () => {
         }
       }
     }
-  `)
+  `);
 
-  return <Img fluid={data.placeholderImage.childImageSharp.fluid} />
-}
+  return <Img fluid={data.placeholderImage.childImageSharp.fluid} />;
+};
 
-export default Image
+export default Image;
